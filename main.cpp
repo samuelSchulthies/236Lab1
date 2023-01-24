@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Token.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Token t = Token(COMMA, ",", 2);
+    cout << t.toString() << endl;
 }
+
