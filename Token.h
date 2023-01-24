@@ -45,7 +45,9 @@ public:
         if (type == COMMA){
             return "COMMA";
         }
+        if (type == PERIOD){
+            return "PERIOD";
+        }
     }
 };
-
 
