@@ -40,6 +40,12 @@ public:
         out << "(" << type << "," << "\"" << value << "\"" << "," << line << ")";
         return out.str();
     }
+
+    string typeName(TokenType type) const {
+        if (type == COMMA){
+            return "COMMA";
+        }
+    }
 };
 
 
