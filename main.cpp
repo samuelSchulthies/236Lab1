@@ -3,6 +3,6 @@
 
 int main() {
     Token t = Token(COMMA, ",", 2);
-    cout << t.typeName() << endl;
+    cout << t.typeName(COMMA) << endl;
 }
 
