@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/samuelschulthies/CLionProjects/236/236Lab1/cmake-build-debug",
-		"source" : "/Users/samuelschulthies/CLionProjects/236/236Lab1"
+		"build" : "/Users/samuelschulthies/CLionProjects/236/236Lab1AndProject1/cmake-build-debug",
+		"source" : "/Users/samuelschulthies/CLionProjects/236/236Lab1AndProject1"
 	},
 	"version" : 
 	{
