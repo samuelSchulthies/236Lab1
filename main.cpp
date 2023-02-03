@@ -22,8 +22,8 @@ int main(int argc, char** argv) {
             datalogInput += datalogAdder;
         }
 
-        datalogString.scanToken();
-
+        Token t = datalogString.scanToken();
+        cout << t.toString() << endl;
 }
 
 
