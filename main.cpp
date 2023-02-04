@@ -21,12 +21,12 @@ int main(int argc, char** argv) {
         getline(input, datalogAdder);
         datalogInput += datalogAdder;
     }
-//    //removes the whitespace from the string
-//    for (unsigned int i = 0; i < datalogInput.size(); i++) {
-//        if (isspace(i)) {
-//            datalogInput.erase(i);
-//        }
-//    }
+    //removes the whitespace from the string
+    for (unsigned int i = 0; i < datalogInput.size(); i++) {
+        if (isspace(i)) {
+            datalogInput.erase(i);
+        }
+    }
 //    for (unsigned int i = 0; i < datalogInput.size(); ++i) {
 //        Token t = datalogString.scanToken();
 //        cout << t.toString();
