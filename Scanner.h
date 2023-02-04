@@ -16,9 +16,6 @@ public:
 
     Token scanToken() {
         int length = input.length();
-        TokenType type;
-        string value;
-        int line;
         for (int i = 0; i < length; i++){
             int c = input[i];
             int lineVal = 1;
@@ -114,7 +111,6 @@ public:
 //                break;
 //            }
         }
-        return Token(type, value, line);
     }
 };
 
