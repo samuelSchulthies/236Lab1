@@ -17,6 +17,8 @@ public:
     Token scanToken() {
 
         int length = input.size();
+        cout << endl;
+        cout << input.size() << endl;
         for (int i = 0; i < length; i++){
             int c = input[i];
             int lineVal = 1;
