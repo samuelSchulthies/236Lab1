@@ -19,13 +19,12 @@ public:
         for (int i = 0; i < length - 1; i++){
             int c = input[i];
             int lineVal = 1;
-
+            cout << "hey" << endl;
             //Identifies the character and creates the appropriate token
             if (input[i] == ','){
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(0);
                 tokenStorage.push_back(t);
-                cout << "hey" << endl;
             }
             else if (input[i] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
