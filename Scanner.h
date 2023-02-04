@@ -20,7 +20,7 @@ public:
         cout << endl;
         cout << input.size() << endl;
         for (int i = 0; i < length; i++){
-            cout << "hey" << endl;
+            cout << input[i] << endl;
             int c = input[i];
             int lineVal = 1;
 
