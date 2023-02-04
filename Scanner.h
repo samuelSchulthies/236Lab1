@@ -14,7 +14,7 @@ private:
 public:
     Scanner(const string& input) : input(input) { }
 
-    Token scanToken() {
+    Token scanToken(string input) {
 
         int length = input.size();
         cout << endl;

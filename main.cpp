@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
             datalogInput.erase(i);
         }
     }
-    Token t = datalogString.scanToken();
+    Token t = datalogString.scanToken(datalogInput);
     cout << t.toString();
 }
 
