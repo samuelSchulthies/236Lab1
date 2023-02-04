@@ -154,6 +154,7 @@ public:
         else if (value == "EOF_TYPE"){          //IMPLEMENT ME
             return "EOF_TYPE";
         }
+        return "null";
     }
 };
 

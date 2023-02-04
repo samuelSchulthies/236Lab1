@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
 
     ifstream input(fileName);
     if(!input.is_open()) {
-        cout << fileName << "not found or could not be opened" << endl;
+        cout << fileName << " not found or could not be opened" << endl;
         return 1;
     }
     while(!input.eof()){
@@ -27,10 +27,8 @@ int main(int argc, char** argv) {
             datalogInput.erase(i);
         }
     }
-    for (unsigned int i = 0; i < datalogInput.size(); i++) {
-        Token t = datalogString.scanToken();
-        cout << t.toString();
-    }
+    Token t = datalogString.scanToken();
+    cout << t.toString();
 }
 
 
