@@ -16,13 +16,9 @@ public:
 
     Token scanToken() {
         int length = input.length();
-        for (int i = 0; i < length; i++){
+        for (int i = 0; i < length - 1; i++){
             int c = input[i];
             int lineVal = 1;
-
-            if (c == '\n'){
-                lineVal += 1;
-            }
 
             //Identifies the character and creates the appropriate token
             if (input[i] == ','){
@@ -105,10 +101,12 @@ public:
 //                Token t = Token(EOF_TYPE, "", lineVal);
 //                input.erase(0);
 //            }
+            else if (c == '\n'){
+                lineVal += 1;
+            }
         }
-
-        //return Token();
     }
+
 };
 
 
