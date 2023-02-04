@@ -29,7 +29,7 @@ public:
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(0);
                 tokenStorage.push_back(t);
-                cout << tokenStorage.data() << endl;
+                cout << &tokenStorage.at(i) << endl;
             }
             else if (input[i] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
