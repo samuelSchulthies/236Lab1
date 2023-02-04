@@ -17,10 +17,10 @@ public:
     Token scanToken(string input) {
 
         int length = input.size();
-        cout << endl;
-        cout << input.size() << endl;
+        //cout << endl;
+        //cout << input.size() << endl;
         for (int i = 0; i < length; i++){
-            cout << input[i] << endl;
+            //cout << input[i] << endl;
             int c = input[i];
             int lineVal = 1;
 
