@@ -96,6 +96,7 @@ public:
         else if (type == EOF_TYPE){
             return "EOF_TYPE";
         }
+        return "null";
     }
 
     string valueLiteral(string value) const {
@@ -153,6 +154,7 @@ public:
         else if (value == "EOF_TYPE"){          //IMPLEMENT ME
             return "EOF_TYPE";
         }
+        return "null";
     }
 };
 
