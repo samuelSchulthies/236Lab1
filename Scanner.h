@@ -15,11 +15,12 @@ public:
     Scanner(const string& input) : input(input) { }
 
     Token scanToken() {
+        cout << "hey" << endl;
         int length = input.length();
         for (int i = 0; i < length - 1; i++){
             int c = input[i];
             int lineVal = 1;
-            cout << "hey" << endl;
+
             //Identifies the character and creates the appropriate token
             if (input[i] == ','){
                 Token t = Token(COMMA, ",", lineVal);
