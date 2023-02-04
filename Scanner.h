@@ -15,9 +15,10 @@ public:
     Scanner(const string& input) : input(input) { }
 
     Token scanToken() {
-        cout << "hey" << endl;
+
         int length = input.length();
-        for (int i = 0; i < length - 1; i++){
+        for (int i = 0; i < length; i++){
+            cout << "hey" << endl;
             int c = input[i];
             int lineVal = 1;
 
