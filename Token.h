@@ -37,7 +37,7 @@ public:
 
     string toString() const {
         stringstream out;
-        out << "(" << typeName(type) << "," << "\"" << valueLiteral(value) << "\"" << "," << line << ")";
+        out << "(" << type << "," << "\"" << value << "\"" << "," << line << ")";
         return out.str();
     }
 
