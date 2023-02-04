@@ -22,12 +22,12 @@ int main(int argc, char** argv) {
         datalogInput += datalogAdder;
     }
     //removes the whitespace from the string
-    for (int i; i < datalogInput.size(); i++) {
+    for (int i = 0; i < datalogInput.size(); i++) {
         if (isspace(i)) {
             datalogInput.erase(i);
         }
     }
-    for (int i; i < datalogInput.size(); ++i) {
+    for (int i = 0; i < datalogInput.size(); ++i) {
         Token t = datalogString.scanToken();
         cout << t.toString();
     }
