@@ -27,10 +27,10 @@ int main(int argc, char** argv) {
             datalogInput.erase(i);
         }
     }
-//    for (unsigned int i = 0; i < datalogInput.size(); ++i) {
-//        Token t = datalogString.scanToken();
-//        cout << t.toString();
-//    }
+    for (unsigned int i = 0; i < datalogInput.size(); i++) {
+        Token t = datalogString.scanToken();
+        cout << t.toString();
+    }
 }
 
 
