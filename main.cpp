@@ -1,7 +1,8 @@
-#include <iostream>
 #include "Token.h"
 #include "Scanner.h"
 #include <fstream>
+#include <cctype>
+#include <iostream>
 
 using namespace std;
 
@@ -11,19 +12,25 @@ int main(int argc, char** argv) {
     Scanner datalogString = Scanner(datalogInput);
 
     ifstream input(fileName);
-        if(!input.is_open()) {
-            cout << fileName << "not found or could not be opened" << endl;
-            return 1;
+    if(!input.is_open()) {
+        cout << fileName << "not found or could not be opened" << endl;
+        return 1;
+    }
+    while(!input.eof()){
+        string datalogAdder;
+        getline(input, datalogAdder);
+        datalogInput += datalogAdder;
+    }
+    //removes the whitespace from the string
+    for (int i; i < datalogInput.size(); i++) {
+        if (isspace(i)) {
+            datalogInput.erase(i);
         }
-        while(!input.eof()){
-            string datalogAdder;
-            getline(input, datalogAdder);
-
-            datalogInput += datalogAdder;
-        }
-
+    }
+    for (int i; i < datalogInput.size(); ++i) {
         Token t = datalogString.scanToken();
-        cout << t.toString() << endl;
+        cout << t.toString();
+    }
 }
 
 

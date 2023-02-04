@@ -10,9 +10,7 @@ class Scanner {
 
 private:
     string input;
-    vector<Token> tokenStorage;
-
-
+    
 public:
     Scanner(const string& input) : input(input) { }
 
@@ -26,32 +24,32 @@ public:
             if (input[i] == ','){
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
             else if (input[i] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
             else if (input[i] == '?'){
                 Token t = Token(Q_MARK, "?", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
             else if (input[i] == '('){
                 Token t = Token(LEFT_PAREN, "(", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
             else if (input[i] == ')'){
                 Token t = Token(RIGHT_PAREN, ")", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
             else if (input[i] == ':'){
                 Token t = Token(COLON, ":", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
 //            else if (input[i] == ':-'){
 //                Token t = Token(COLON_DASH, ":-", lineVal);
@@ -60,12 +58,12 @@ public:
             else if (input[i] == '*'){
                 Token t = Token(MULTIPLY, "*", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
             else if (input[i] == '+'){
                 Token t = Token(ADD, "+", lineVal);
                 input.erase(0);
-                tokenStorage.push_back(t);
+                
             }
 //            else if (input[i] == 'Schemes'){
 //                Token t = Token(SCHEMES, "Schemes", lineVal);
@@ -109,9 +107,6 @@ public:
             if (c == '\n'){
                 lineVal += 1;
             }
-//            if (isspace(c)){
-//                input.erase(i);
-//            }
 //            if (isalpha(input[i])){
 //                break;
 //            }

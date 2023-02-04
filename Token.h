@@ -37,7 +37,7 @@ public:
 
     string toString() const {
         stringstream out;
-        out << "(" << type << "," << "\"" << value << "\"" << "," << line << ")";
+        out << "(" << typeName(type) << "," << "\"" << valueLiteral(value) << "\"" << "," << line << ")";
         return out.str();
     }
 
@@ -98,59 +98,59 @@ public:
         }
     }
 
-    string valueLiteral(TokenType value) const {
-        if (type == COMMA){
+    string valueLiteral(string value) const {
+        if (value == "COMMA"){
             return ",";
         }
-        else if (type == PERIOD){
+        else if (value == "PERIOD"){
             return ".";
         }
-        else if (type == Q_MARK){
+        else if (value == "Q_MARK"){
             return "?";
         }
-        else if (type == LEFT_PAREN){
+        else if (value == "LEFT_PAREN"){
             return "(";
         }
-        else if (type == RIGHT_PAREN){
+        else if (value == "RIGHT_PAREN"){
             return ")";
         }
-        else if (type == COLON){
+        else if (value == "COLON"){
             return ":";
         }
-        else if (type == COLON_DASH){
+        else if (value == "COLON_DASH"){
             return ":-";
         }
-        else if (type == MULTIPLY){
+        else if (value == "MULTIPLY"){
             return "*";
         }
-        else if (type == ADD){
+        else if (value == "ADD"){
             return "+";
         }
-        else if (type == SCHEMES){
+        else if (value == "SCHEMES"){
             return "Schemes";
         }
-        else if (type == FACTS){
+        else if (value == "FACTS"){
             return "Facts";
         }
-        else if (type == RULES){
+        else if (value == "RULES"){
             return "Rules";
         }
-        else if (type == QUERIES){
+        else if (value == "QUERIES"){
             return "Queries";
         }
-        else if (type == ID){                //IMPLEMENT ME
+        else if (value == "ID"){                //IMPLEMENT ME
             return "ID";
         }
-        else if (type == STRING){            //IMPLEMENT ME
+        else if (value == "STRING"){            //IMPLEMENT ME
             return "STRING";
         }
-        else if (type == COMMENT){           //IMPLEMENT ME
+        else if (value == "COMMENT"){           //IMPLEMENT ME
             return "COMMENT";
         }
-        else if (type == UNDEFINED){         //IMPLEMENT ME
+        else if (value == "UNDEFINED"){         //IMPLEMENT ME
             return "UNDEFINED";
         }
-        else if (type == EOF_TYPE){          //IMPLEMENT ME
+        else if (value == "EOF_TYPE"){          //IMPLEMENT ME
             return "EOF_TYPE";
         }
     }
