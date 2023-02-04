@@ -20,6 +20,10 @@ public:
             int c = input[i];
             int lineVal = 1;
 
+            if (c == '\n'){
+                lineVal += 1;
+            }
+
             //Identifies the character and creates the appropriate token
             if (input[i] == ','){
                 Token t = Token(COMMA, ",", lineVal);
@@ -100,15 +104,6 @@ public:
 //            else if (input[i] == ''){
 //                Token t = Token(EOF_TYPE, "", lineVal);
 //                input.erase(0);
-//            }
-
-            //If the first characters are white space, remove them until gone.
-            //isalpha will break the loop once it stops encountering white space
-            if (c == '\n'){
-                lineVal += 1;
-            }
-//            if (isalpha(input[i])){
-//                break;
 //            }
         }
 
