@@ -18,7 +18,7 @@ public:
 
         int length = input.size();
 
-        for (int i = i; i < length; i++){
+        for (int i = 0; i < length; i++){
             int c = input[i];
             int lineVal = 1;
 
