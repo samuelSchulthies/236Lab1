@@ -26,6 +26,7 @@ public:
 
             //Identifies the character and creates the appropriate token
             if (input[i] == ','){
+                cout << "hey" << endl;
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(0);
                 tokenStorage.push_back(t);
