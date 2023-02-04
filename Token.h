@@ -37,7 +37,7 @@ public:
 
     string toString() const {
         stringstream out;
-        out << "(" << type << "," << "\"" << value << "\"" << "," << line << ")";
+        out << "(" << typeName(type) << "," << "\"" << valueLiteral(value) << "\"" << "," << line << ")";
         return out.str();
     }
 
@@ -154,7 +154,6 @@ public:
         else if (value == "EOF_TYPE"){          //IMPLEMENT ME
             return "EOF_TYPE";
         }
-        return "null";
     }
 };
 
