@@ -102,9 +102,9 @@ public:
             if (isspace(c)){
                 input.erase(i);
             }
-            if (isalpha(input[i])){
-                break;
-            }
+//            if (isalpha(input[i])){
+//                break;
+//            }
         }
 
         //return Token(type, value, line);
