@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int argc, char** argv) {
     string fileName = argv[1];
-    string datalogInput;
+    string datalogInput = "";
     Scanner datalogString = Scanner(datalogInput);
 
     ifstream input(fileName);
@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     while(!input.eof()){
         string datalogAdder;
         getline(input, datalogAdder);
-        datalogInput += datalogAdder;
+        datalogInput += datalogAdder + "\n";
     }
 //    //removes the whitespace from the string
 //    for (unsigned int i = 0; i < datalogInput.size(); i++) {
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 //        }
 //    }
     Token t = datalogString.scanToken(datalogInput);
-    cout << t.toString();
+    //cout << t.toString();
 
     for (unsigned int i = 0; i < datalogString.tokenStorage.size(); ++i) {
         cout << datalogString.tokenStorage.at(i).toString() << endl;
