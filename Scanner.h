@@ -12,7 +12,7 @@ private:
     string input;
 public:
     Scanner(const string& input) : input(input) { }
-    static vector<Token> tokenStorage;
+    vector<Token> tokenStorage;
 
     Token scanToken(string input) {
 
@@ -27,8 +27,6 @@ public:
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(i);
                 tokenStorage.push_back(t);
-
-                cout << &tokenStorage.at(i) << endl;
             }
             else if (input[i] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
