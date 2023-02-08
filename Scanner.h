@@ -16,9 +16,10 @@ public:
 
     Token scanToken(string input) {
 
+        int lineVal = 1;
+        
         while(input.size() > 0){
             //cout << input.size() << endl;
-            int lineVal = 1;
 
             if (input[0] == '\n'){
                 lineVal += 1;
