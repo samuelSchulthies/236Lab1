@@ -1,7 +1,6 @@
 #include "Token.h"
 #include "Scanner.h"
 #include <fstream>
-#include <cctype>
 #include <iostream>
 
 using namespace std;
@@ -28,9 +27,9 @@ int main(int argc, char** argv) {
 //        }
 //    }
     Token t = datalogString.scanToken(datalogInput);
-    //cout << t.toString();
 
     for (unsigned int i = 0; i < datalogString.tokenStorage.size(); ++i) {
+        cout << "hey" << endl;
         cout << datalogString.tokenStorage.at(i).toString() << endl;
     }
 
