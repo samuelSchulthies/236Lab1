@@ -34,15 +34,11 @@ public:
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(0, 1);
                 tokenStorage.push_back(t);
-                cout << "COMMA ELSE IF" << endl;
             }
             else if (input[0] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
-                cout << input.size() << endl;
                 input.erase(0, 1);
                 tokenStorage.push_back(t);
-                cout << "PERIOD ELSE IF" << endl;
-                cout << input.size() << endl;
             }
             else if (input[0] == '?'){
                 Token t = Token(Q_MARK, "?", lineVal);
@@ -115,7 +111,6 @@ public:
 //                input.erase(i);
 //            }
         }
-        //cout << "size: " << tokenStorage.size() << endl;
     }
 
 };
