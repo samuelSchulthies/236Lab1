@@ -27,9 +27,8 @@ int main(int argc, char** argv) {
 //        }
 //    }
     Token t = datalogString.scanToken(datalogInput);
-
+    cout << datalogString.tokenStorage.size() << endl;
     for (unsigned int i = 0; i < datalogString.tokenStorage.size(); ++i) {
-        cout << datalogString.tokenStorage.size() << endl;
         cout << datalogString.tokenStorage.at(i).toString() << endl;
     }
 
