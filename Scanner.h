@@ -22,46 +22,46 @@ public:
 
             if (input[0] == '\n'){
                 lineVal += 1;
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
             }
 
             else if (isspace(0)) {
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
             }
 
             //Identifies the character and creates the appropriate token
             else if (input[0] == ','){
                 Token t = Token(COMMA, ",", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
                 cout << "COMMA ELSE IF" << endl;
             }
             else if (input[0] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
                 cout << input.size() << endl;
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
                 cout << "PERIOD ELSE IF" << endl;
                 cout << input.size() << endl;
             }
             else if (input[0] == '?'){
                 Token t = Token(Q_MARK, "?", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
             else if (input[0] == '('){
                 Token t = Token(LEFT_PAREN, "(", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
             else if (input[0] == ')'){
                 Token t = Token(RIGHT_PAREN, ")", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
             else if (input[0] == ':'){
                 Token t = Token(COLON, ":", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
 //            else if (input[i] == ':-'){
@@ -70,12 +70,12 @@ public:
 //            }
             else if (input[0] == '*'){
                 Token t = Token(MULTIPLY, "*", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
             else if (input[0] == '+'){
                 Token t = Token(ADD, "+", lineVal);
-                input.erase(input.begin()+0, input.end()+1);
+                input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
 //            else if (input[i] == 'Schemes'){
