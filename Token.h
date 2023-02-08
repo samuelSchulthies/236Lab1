@@ -30,7 +30,7 @@ class Token {
 private:
     TokenType type;
     string value;
-    int line = 1;
+    int line;
 
 public:
     Token(TokenType type, string value, int line) : type(type), value(value), line(line) {}
@@ -99,62 +99,5 @@ public:
         return "null";
     }
 
-    string valueLiteral(string value) const {
-        if (value == "COMMA"){
-            return ",";
-        }
-        else if (value == "PERIOD"){
-            return ".";
-        }
-        else if (value == "Q_MARK"){
-            return "?";
-        }
-        else if (value == "LEFT_PAREN"){
-            return "(";
-        }
-        else if (value == "RIGHT_PAREN"){
-            return ")";
-        }
-        else if (value == "COLON"){
-            return ":";
-        }
-        else if (value == "COLON_DASH"){
-            return ":-";
-        }
-        else if (value == "MULTIPLY"){
-            return "*";
-        }
-        else if (value == "ADD"){
-            return "+";
-        }
-        else if (value == "SCHEMES"){
-            return "Schemes";
-        }
-        else if (value == "FACTS"){
-            return "Facts";
-        }
-        else if (value == "RULES"){
-            return "Rules";
-        }
-        else if (value == "QUERIES"){
-            return "Queries";
-        }
-        else if (value == "ID"){                //IMPLEMENT ME
-            return "ID";
-        }
-        else if (value == "STRING"){            //IMPLEMENT ME
-            return "STRING";
-        }
-        else if (value == "COMMENT"){           //IMPLEMENT ME
-            return "COMMENT";
-        }
-        else if (value == "UNDEFINED"){         //IMPLEMENT ME
-            return "UNDEFINED";
-        }
-        else if (value == "EOF_TYPE"){          //IMPLEMENT ME
-            return "EOF_TYPE";
-        }
-        return "null";
-    }
 };
 
