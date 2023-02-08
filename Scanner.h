@@ -17,7 +17,7 @@ public:
     Token scanToken(string input) {
 
         while(input.size() > 0){
-            cout << input.size() << endl;
+            //cout << input.size() << endl;
             int lineVal = 1;
 
             if (input[0] == '\n'){
@@ -113,7 +113,7 @@ public:
 //                input.erase(i);
 //            }
         }
-        cout << "size: " << tokenStorage.size() << endl;
+        //cout << "size: " << tokenStorage.size() << endl;
     }
 
 };
