@@ -30,7 +30,7 @@ class Token {
 private:
     TokenType type;
     string value;
-    int line;
+    int &line;
 
 public:
     Token(TokenType type, string value, int line) : type(type), value(value), line(line) {}
