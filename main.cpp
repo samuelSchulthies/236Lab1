@@ -20,25 +20,11 @@ int main(int argc, char** argv) {
         getline(input, datalogAdder);
         datalogInput += datalogAdder + "\n";
     }
-//    //removes the whitespace from the string
-//    for (unsigned int i = 0; i < datalogInput.size(); i++) {
-//        if (isspace(i)) {
-//            datalogInput.erase(i);
-//        }
-//    }
+
     Token t = datalogString.scanToken(datalogInput);
-    cout << datalogString.tokenStorage.size() << endl;
+    //cout << datalogString.tokenStorage.size() << endl;
     for (unsigned int i = 0; i < datalogString.tokenStorage.size(); ++i) {
         cout << datalogString.tokenStorage.at(i).toString() << endl;
     }
 
 }
-
-
-
-//    Token t = Token(COMMA, ",", 2);
-//    cout << t.typeName(COMMA) << endl;
-
-//Scanner s = Scanner(",,");
-//Token t = s.scanToken();
-//cout << t.toString() << endl;
