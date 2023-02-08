@@ -17,11 +17,15 @@ public:
     Token scanToken(string input) {
 
         int lineVal = 1;
-        
+
         while(input.size() > 0){
             //cout << input.size() << endl;
 
-            if (input[0] == '\n'){
+            if (input.size() == 0){
+                break;
+            }
+
+            else if (input[0] == '\n'){
                 lineVal += 1;
                 input.erase(0, 1);
             }
