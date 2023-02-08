@@ -41,6 +41,7 @@ public:
                 input.erase(0);
                 tokenStorage.push_back(t);
                 cout << "PERIOD ELSE IF" << endl;
+                cout << input.size() << endl;
             }
             else if (input[0] == '?'){
                 Token t = Token(Q_MARK, "?", lineVal);
