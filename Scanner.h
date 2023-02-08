@@ -34,12 +34,12 @@ public:
                 Token t = Token(COMMA, ",", lineVal);
                 input.erase(0);
                 tokenStorage.push_back(t);
+                cout << "COMMA IF" << endl;
             }
             else if (input[0] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
                 input.erase(0);
                 tokenStorage.push_back(t);
-                cout << "I AM HERE" << endl;
             }
             else if (input[0] == '?'){
                 Token t = Token(Q_MARK, "?", lineVal);
