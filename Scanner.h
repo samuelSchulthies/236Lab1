@@ -38,6 +38,7 @@ public:
             }
             else if (input[0] == '.'){
                 Token t = Token(PERIOD, ".", lineVal);
+                cout << input.size() << endl;
                 input.erase(0);
                 tokenStorage.push_back(t);
                 cout << "PERIOD ELSE IF" << endl;
