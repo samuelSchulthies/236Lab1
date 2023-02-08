@@ -111,6 +111,7 @@ public:
 //                input.erase(i);
 //            }
         }
+        cout << "size: " << tokenStorage.size() << endl;
     }
 
 };
