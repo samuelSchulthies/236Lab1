@@ -31,7 +31,7 @@ public:
 
             //Identifies the character and creates the appropriate token
             else if (input[0] == ','){
-                Token t = Token(COMMA, ",", &lineVal);
+                Token t = Token(COMMA, ",", lineVal);
                 input.erase(0, 1);
                 tokenStorage.push_back(t);
             }
@@ -111,6 +111,7 @@ public:
 //                input.erase(i);
 //            }
         }
+
     }
 
 };
