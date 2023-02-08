@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "236Lab1",
+					"name" : "236Lab1AndProject1",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "236Lab1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-236Lab1-Debug-aef30dd71ac115f7e9d2.json",
-					"name" : "236Lab1",
+					"id" : "236Lab1AndProject1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-236Lab1AndProject1-Debug-f79e7b5fa46ce042400d.json",
+					"name" : "236Lab1AndProject1",
 					"projectIndex" : 0
 				}
 			]

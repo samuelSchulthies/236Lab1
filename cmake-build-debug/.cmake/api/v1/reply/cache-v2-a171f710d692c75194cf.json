@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "236Lab1AndProject1_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/samuelschulthies/CLionProjects/236/236Lab1AndProject1/cmake-build-debug"
+		},
+		{
+			"name" : "236Lab1AndProject1_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "236Lab1AndProject1_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/samuelschulthies/CLionProjects/236/236Lab1AndProject1"
+		},
+		{
 			"name" : "236Lab1_BINARY_DIR",
 			"properties" : 
 			[
@@ -175,10 +211,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "/usr/bin/clang++"
 		},
 		{
@@ -271,10 +307,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "/usr/bin/clang"
 		},
 		{
@@ -831,7 +867,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "236Lab1"
+			"value" : "236Lab1AndProject1"
 		},
 		{
 			"name" : "CMAKE_RANLIB",

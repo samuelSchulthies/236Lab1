@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "236Lab1"
+			"path" : "236Lab1AndProject1"
 		}
 	],
 	"backtrace" : 1,
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "236Lab1::@6890427a1f51a3e7e1df",
+	"id" : "236Lab1AndProject1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "236Lab1",
-	"nameOnDisk" : "236Lab1",
+	"name" : "236Lab1AndProject1",
+	"nameOnDisk" : "236Lab1AndProject1",
 	"paths" : 
 	{
 		"build" : ".",
