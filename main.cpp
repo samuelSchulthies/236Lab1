@@ -26,5 +26,5 @@ int main(int argc, char** argv) {
         cout << datalogString.tokenStorage.at(i).toString() << endl;
     }
     cout << "Seg?" << endl;
-
+    return 0;
 }

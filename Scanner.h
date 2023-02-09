@@ -19,7 +19,6 @@ public:
         int lineVal = 1;
 
         while(input.size() > 0){
-            //cout << input.size() << endl;
 
             if (input.size() == 0){
                 break;
